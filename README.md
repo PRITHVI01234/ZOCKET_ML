@@ -27,13 +27,42 @@ The developed model utilizes the pre-trained VGG16 architecture for image recogn
 - OpenCV
 - Other relevant machine learning and computer vision libraries.
 
-## How to Run the Model:
+## Running the Model:
 
-1. Clone this repository to your local machine.
-2. Install the required dependencies by running `pip install -r requirements.txt`.
-3. Run the main script using `python ad_recognition_model.py`.
-4. Input the path to the ad creative image when prompted.
-5. Explore the results and insights provided by the model.
+To run the ad recognition model and explore the results using the Ad Streamlit file, follow these steps:
+
+1. **Install Dependencies:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2. **Load the Model:**
+    ```python
+    from tensorflow.keras.models import model_from_json, save_model
+    
+    # Load the architecture from the JSON file
+    with open('model_architecture.json', 'r') as json_file:
+        loaded_model = model_from_json(json_file.read())
+
+    # Load the weights
+    loaded_model.load_weights('model_weights.h5')
+
+    # Save the entire model (architecture and weights) as an HDF5 file
+    save_model(loaded_model, 'ad_recognition_model.h5')
+    ```
+
+3. **Run the Ad Streamlit File:**
+
+    ```bash
+    streamlit run AD.py (Recommended to run in VS code)
+    ```
+
+4. **Input the Path to the Ad Creative Image when Prompted.**
+
+5. **Explore the Results:**
+
+   The Ad Streamlit file will display the results and insights provided by the model.
 
 ## Acknowledgments:
 
@@ -42,3 +71,14 @@ I would like to express my gratitude to Zocket for organizing this hackathon and
 Feel free to reach out for any inquiries or collaborations!
 
 **Happy Hacking!**
+
+## Acknowledgments:
+
+A big thank you to Zocket for hosting this hackathon and providing a platform for innovation in computer vision and machine learning. Special appreciation for the continuous support from my peers and mentors throughout development.
+
+Zocket, a trailblazer in ad creation (ad creation in 30 seconds!), served as a major inspiration for this project.
+
+```python
+# Feel the gratitude
+print("Thank you, Zocket!")
+
