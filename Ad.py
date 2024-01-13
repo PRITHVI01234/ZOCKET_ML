@@ -5,7 +5,7 @@ import pandas as pd
 import base64
 
 # Load your model
-model = load_model("Ident.h5")
+model = load_model("ad_recognition_model.h5")
 
 # File path for storing predictions
 history_file_path = "prediction_historysd.csv"
