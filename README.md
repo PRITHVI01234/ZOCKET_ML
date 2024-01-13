@@ -55,7 +55,7 @@ To run the ad recognition model and explore the results using the Ad Streamlit f
 3. **Run the Ad Streamlit File:**
 
     ```bash
-    streamlit run AD.py 
+    streamlit run Ad.py 
     ```
 
 4. **Input the Path to the Ad Creative Image when Prompted.**
