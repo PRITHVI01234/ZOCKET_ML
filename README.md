@@ -60,6 +60,8 @@ To run the ad recognition model and explore the results using the Ad Streamlit f
 
 4. **Input the Path to the Ad Creative Image when Prompted.**
 
+   Choose the image you want to do predictions on by choosing the image from your desktop or anyother
+
 5. **Explore the Results:**
 
    The Ad Streamlit file will display the results and insights provided by the model.
