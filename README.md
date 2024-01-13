@@ -65,14 +65,7 @@ To run the ad recognition model and explore the results using the Ad Streamlit f
 5. **Explore the Results:**
 
    The Ad Streamlit file will display the results and insights provided by the model.
-
-## Acknowledgments:
-
-I would like to express my gratitude to Zocket for organizing this hackathon and providing a platform for showcasing innovative solutions in the field of computer vision and machine learning. Additionally, I appreciate the support and guidance from my peers and mentors throughout the development process.
-
-Feel free to reach out for any inquiries or collaborations!
-
-**Happy Hacking!**
+   
 
 ## Acknowledgments:
 
